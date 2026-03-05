@@ -27,10 +27,10 @@ int[] Merge(int[] first,int[] second){
     return NewArr;
 }
 int[] MergeSort(int[] arr){
-//    Faults i made :
-//    recursion ending condition : arr.length == 0;
-//    over engineering trap : checking mid == 1 even though the while loops can easily fix them
-//    j starting with : arr.length - mid -1;
+//   Faults i made :-
+//   1. recursion ending condition : arr.length == 0; after : arr.length <= 0
+//   2. over engineering trap : checking mid == 1 even though the while loops can easily fix them
+//   3. j starting with : arr.length - mid -1;
     if(arr.length <= 1){
         return arr;
     }
