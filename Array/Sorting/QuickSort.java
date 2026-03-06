@@ -1,10 +1,3 @@
-void swap(int[] arr, int num1,int num2){
-    int temp = arr[num1];
-    arr[num1] = arr[num2];
-    arr[num2] = temp;
-    System.out.println(arr[num1]+" is swapped with "+arr[num2]);
-
-}
 void quickSort(int[] arr,int start,int end){
     if(start >= end){
         return;
@@ -13,9 +6,10 @@ void quickSort(int[] arr,int start,int end){
     int right = end;
     int mid = left+(right-left) /2;
     int pivot= arr[mid];
+    System.out.println("Arrays starts from "+left+" to "+"right "+right);
+    System.out.println("Current pivot: "+pivot);
 
-    System.out.println(pivot);
-    while(left<right){
+    while(left<=right){
         while(arr[left]<pivot){
             left++;
         }
@@ -23,7 +17,9 @@ void quickSort(int[] arr,int start,int end){
             right--;
         }
         if(left<=right){
-            swap(arr,left,right);
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
             left++;
             right--;
         }
@@ -34,6 +30,6 @@ void quickSort(int[] arr,int start,int end){
 }
 
 void main(){
-    int[] arr = {5,2,4,3,1};
+    int[] arr = {5,2,4,3,1,2,2};
     quickSort(arr,0,arr.length-1);
 }
