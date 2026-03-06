@@ -6,7 +6,7 @@ void quickSort(int[] arr,int start,int end){
     int right = end;
     int mid = left+(right-left) /2;
     int pivot= arr[mid];
-    System.out.println("Arrays starts from "+left+" to "+"right "+right);
+    System.out.println("Arrays starts from "+left+" to right "+right);
     System.out.println("Current pivot: "+pivot);
 
     while(left<=right){
