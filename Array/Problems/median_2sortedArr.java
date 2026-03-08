@@ -25,7 +25,7 @@ double findMedian(int[] num1,int[] num2){
     }
 }
 void main(){
-    int[] arr1 = {1,2};
+    int[] arr1 = {1,2,100,101,1009};
     int[] arr2 = {8,9,10,11};
     double res = findMedian(arr1,arr2);
     System.out.println(res);
