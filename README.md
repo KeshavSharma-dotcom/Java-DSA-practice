@@ -5,4 +5,7 @@
    1. Recursion ending condition : arr.length == 0; after : arr.length <= 0
    2. Over engineering trap : checking mid == 1 even though the while loops can easily fix them
    3. j starting with : arr.length - mid -1; after : j = mid;
-      
+
+=> Quick Sort : 
+   1. Changes outer while(left < right) to while(left <= right)
+      -to ensure the left and right pointers crossed.
