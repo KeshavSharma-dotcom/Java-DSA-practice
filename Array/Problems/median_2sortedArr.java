@@ -19,7 +19,7 @@ double findMedian(int[] num1,int[] num2){
         System.out.println(previous +" "+current);
     }
     if(totalLen%2 == 0){
-        return (double) (current+previous)/2;
+        return (double) (current+previous)/2.0;
     }else{
         return current;
     }
