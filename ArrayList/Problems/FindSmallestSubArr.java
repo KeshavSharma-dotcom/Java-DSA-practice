@@ -7,7 +7,9 @@ int findSmallestSubarray(ArrayList<Integer> list,HashSet<Integer> target){
     for(int right =0;right<list.size();right++){
         int i = list.get(right);
         if(target.contains(i)){
+
             window.put(i,window.getOrDefault(i,0)+1);
+            System.out.println(window);
             if(window.get(i) == 1){
                 satisfyVal++;
             }
