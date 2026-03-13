@@ -9,7 +9,7 @@ static class Node{
         this.val = value;
     }
 }
-class LRUcache{
+static class LRUcache{
     int capacity;
     Map<Integer, Node> map;
     Node head,tail;
