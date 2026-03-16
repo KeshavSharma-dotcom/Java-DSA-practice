@@ -20,19 +20,21 @@ static class LRUCache {
         head.next = tail;
         tail.prev = head;
     }
-    public void get(int k){
+    public int get(int k){
         if(!map.containsKey(k)){
             System.out.println("Key not found");
-            return;
+            return -1;
         }
+//        valAtKey = value at key
         Node valAtKey = map.get(k);
         remove(valAtKey);
         insertToHead(valAtKey);
-        System.out.println(valAtKey.value);
+        return valAtKey.value;
     }
     public void put(int k,int val){
         if(map.containsKey(k)){
             remove(map.get(k));
+            map.remove(k);
         }
 
         if(map.size() == capacity) {
@@ -43,7 +45,7 @@ static class LRUCache {
         }
         Node n = new Node(k,val);
         map.put(k,n);
-        System.out.println("Changes key :"+n.key+" holding "+map.get(k).value);
+        System.out.println("Inserted key :"+n.key+" holding "+map.get(k).value);
         insertToHead(n);
     }
     public void remove(Node n){
@@ -65,6 +67,6 @@ void main() {
     l.put(3,3);
     l.put(4,5);
     l.put(5,4);
-    l.get(2);
+    System.out.println("value at 2nd key "+l.get(2));
     l.put(6,2);
 }
