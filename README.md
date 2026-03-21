@@ -9,3 +9,7 @@
 => Quick Sort : 
    1. Changes outer while(left < right) to while(left <= right)
       -to ensure the left and right pointers crossed.
+
+=> Merging linked list : 
+   1. Initially added nodes via insert method.
+      - then used in-place method to just change nodes instead creating new nodes.
