@@ -17,3 +17,8 @@
 => Palindrome in LL :
    1. We can restore the list by reversing the mid to end again.
       - Currnetly slow.next = null; so slow.next = reverseSLL(secondHalf);
+
+=> KGroup reversing :
+   1. Used the recursive reversal to k length groups by isolating K_Node.next = null;
+   2. Off-by-one problem faced while defining getKth function declaring prevGroupTail.next.
+      - Fixed by declaring prevGroupTail starts with a temp node (anchor).
