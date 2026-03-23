@@ -50,8 +50,11 @@ void main(){
     l.insert(90);
     l.insert(50);
     l.insert(20);
+    l.insert(70);
+    l.insert(40);
+    l.insert(80);
     l.print();
     l.reverse();
-    System.out.println("After reversing : ");
+    System.out.print("After reversing : ");
     l.print();
 }
