@@ -22,3 +22,7 @@
    1. Used the recursive reversal to k length groups by isolating K_Node.next = null;
    2. Off-by-one problem faced while defining getKth function declaring prevGroupTail.next.
       - Fixed by declaring prevGroupTail starts with a temp node (anchor).
+
+=> Valid Parentheses :
+   1. Repeat calling pop() and isEmpty multiple time
+      - Now reduced LOC and simplified comparisions.
