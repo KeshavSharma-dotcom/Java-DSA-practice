@@ -52,11 +52,11 @@ static class LinkedList{
             CurrentGroup = prevGroupTail.next;
             K_Node.next = null;
             prevGroupTail.next = ReverseGroup(CurrentGroup);
-            CurrentGroup.next = NextGroup; // first groups tail
-            prevGroupTail = CurrentGroup; // last groups head
+            CurrentGroup.next = NextGroup;
+            prevGroupTail = CurrentGroup;
         }
-        head = temp.next;
-        tail = CurrentGroup;
+        head = temp.next;// first groups tail
+        tail = CurrentGroup;// last groups head
 
     }
     public void printList(){
