@@ -26,3 +26,7 @@
 => Valid Parentheses :
    1. Repeat calling pop() and isEmpty multiple time
       - Now reduced LOC and simplified comparisions.
+
+=> Largest Rectangle in histogram :
+   1. Initially used variables for left and right smallest ,later used arrays SL and SR.
+      - Using arrays gave advantage of searching for all possible heights of each bar.
