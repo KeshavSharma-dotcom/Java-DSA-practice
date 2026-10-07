@@ -58,4 +58,6 @@ private void dfs(String s, int index, int remOpen, int remClose,
     }
 }
 void main() {
+    String t = "(())))()((()))";
+    System.out.println(removeInvalidParentheses(t));
 }
